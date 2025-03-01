@@ -1,8 +1,11 @@
 def isPalindrome(word):
-    if word==word[::-1]:
-        return True
-    else:
-        return False
+    for i in range(len(word)):
+        if word[i]==word[len(word)-1-i]:
+            return True
+        else: 
+            return False
+
 a=input("word please")
 b=str(isPalindrome(a))
-print("Palinedrome?" +b)
+print("Palindrome?" +b)
+
